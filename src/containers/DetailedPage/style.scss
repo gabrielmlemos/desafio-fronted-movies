@@ -1,0 +1,21 @@
+@import "../../style/variables.scss";
+
+.movie-content {
+  width: 100%;
+  padding: 55px 65px;
+
+  @include small-sizes-media() {
+    padding: 20px 10px;
+  }
+
+  .back-to-home {
+    font-size: 25px;
+    color: $main-blue;
+    cursor: pointer;
+
+    @include small-sizes-media() {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

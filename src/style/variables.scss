@@ -1,0 +1,31 @@
+//colors
+$main-blue: #116193;
+$second-blue: #00e8d0;
+$third-blue: #84aac2;
+$main-gray: #ebebeb;
+$second-gray: #969696;
+$third-gray: #f2f2f2;
+
+//weights
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+//medias
+@mixin small-sizes-media() {
+  @media screen and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin medium-sizes-media() {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin large-sizes-media() {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}

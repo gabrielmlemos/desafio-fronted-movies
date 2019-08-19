@@ -1,0 +1,47 @@
+@import "../../style/variables.scss";
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    li {
+      font-size: 25px;
+      color: $main-blue;
+      font-weight: $regular;
+      cursor: pointer;
+
+      @include small-sizes-media() {
+        font-size: 15px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+
+    .current {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: 5px solid $second-blue;
+      color: $second-blue;
+      background: $main-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include small-sizes-media() {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
